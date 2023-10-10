@@ -1,0 +1,256 @@
+/* =========== Common Css Starts =========== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+input,
+.form-control:focus {
+  outline: 0;
+  box-shadow: none;
+}
+:root {
+  --main-font: "Poppins", sans-serif;
+  --heading-font: "PT Sans", sans-serif;
+  --primary-color: #353535;
+  --secondary-color: #7a7a7a;
+  --button-color: #ffcc00;
+  --primary-gradient: linear-gradient(95deg, #fc0 -21.46%, #fff5cb 112.13%);
+  --secondary-gradient: linear-gradient(159deg, #fc0 3.12%, #ffe476 94.59%);
+}
+body {
+  font-family: var(--main-font);
+  color: var(--primary-color);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+}
+.link_button {
+  font-weight: 500;
+  color: var(--primary-color);
+  font-size: 20px;
+  line-height: 180%;
+  padding: 16px 18px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  text-transform: capitalize;
+  margin: 45px 40px 45px 0;
+  transition: 0.4s;
+  display: inline-block;
+}
+.link_button i {
+  margin-left: 11px;
+}
+.link_button:hover {
+  background: var(--button-color);
+  color: #ffffff;
+  padding: 16px 45px;
+  border: none;
+}
+.section_title h3 {
+  font-family: var(--heading-font);
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  padding-left: 18px;
+}
+.section_title p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 190%;
+  margin-bottom: 46px;
+}
+.section_title a {
+  margin-left: 33.82px;
+}
+/* =========== Common Css Ends =========== */
+
+/* ==========Primary Nav Css Starts========== */
+#primary_nav #primary_menu ul li a {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  padding: 5px 22px;
+  display: inline-block;
+  position: relative;
+}
+#primary_nav #primary_menu ul li a::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid var(--primary-color);
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: scale(0);
+  transition: 0.4s;
+}
+#primary_nav #primary_menu ul li a:hover::after {
+  transform: scale(1);
+}
+/* ==========Primary Nav Css Ends========== */
+
+/* ==========View Area Css Starts========== */
+#view_area {
+  margin: 65px 0;
+}
+#view_area .view_area_cnt img {
+  margin: 0 39.33px;
+}
+#view_area .view_area_cnt h6 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+#view_area .view_area_cnt h1 {
+  font-family: var(--heading-font);
+  font-family: 700;
+  font-size: 64px;
+  margin-bottom: 25px;
+}
+#view_area .view_area_cnt p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 180%;
+}
+
+#view_area .view_area_cnt #view_area_list {
+  font-weight: 500;
+  line-height: 180%;
+  font-size: 22px;
+  margin-top: 21px;
+}
+#view_area .view_area_cnt #view_area_list a i {
+  color: var(--primary-color);
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #000000;
+  background: #f4f3f3;
+}
+#view_area .view_area_cnt #view_area_list :nth-child(2) {
+  margin-left: 32px;
+}
+#view_area .view_area_cnt #view_area_list .follow {
+  margin-left: -35px;
+}
+#view_area .view_area_image {
+  transform: translateX(120px);
+}
+/* ==========View Area Css Ends========== */
+
+/* ==========About Css Starts========== */
+#about {
+  background: var(--primary-gradient);
+  position: relative;
+  margin: 150px 0;
+}
+#about .section_title {
+  padding: 78px 15.82px 0;
+}
+#about .shape {
+  width: 208px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+/* ==========About Css Ends========== */
+
+/* ==========Cards Css Starts========== */
+#cards .info_card {
+  padding: 39px 47px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+}
+#cards .info_card h5 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 180%;
+  margin: 30px 0;
+}
+#cards .info_card p {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--secondary-color);
+  line-height: 190%;
+}
+/* ==========Cards Css Ends========== */
+
+/* ==========Branding Css Starts========== */
+#branding {
+  margin: 150px;
+}
+#branding .container {
+  background: var(--primary-gradient);
+  border-radius: 30px;
+}
+#branding .section_title h3 {
+  font-size: 44px;
+  padding: 0;
+  margin-bottom: 21px;
+}
+#branding .section_title p {
+  margin-bottom: 35px;
+  font-size: 18px;
+}
+#branding .section_title a {
+  margin: 0;
+}
+#branding .branding_image img {
+  transform: translateY(10px);
+}
+#branding .branding_line_shape {
+  bottom: 30%;
+  right: 25%;
+}
+#branding .branding_shape {
+  top: -5%;
+  right: 10%;
+}
+/* ==========Branding Css Ends========== */
+
+/* ==========Help Css Starts========== */
+#help .left_cnt ul li i{
+width: 58px;
+height: 58px;
+font-size: 20px;
+border-radius: 50%;
+margin: 0 29px;
+text-align: center;
+line-height: 58px;
+color: #ffffff;
+}
+#help .left_cnt ul .desktop i{
+  background: #55852F;
+}
+#help .left_cnt ul .mobile i{
+  background: #FEDC2A;
+}#help .left_cnt ul .airbnb i{
+  background: #FF8D3A;
+}
+
+/* ==========Help Css Ends========== */
